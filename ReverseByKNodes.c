@@ -62,7 +62,7 @@ struct node *reverseByKNodes (struct node *head, int k) {
         kthNode->next = NULL;
         return head;
 }
-        int main (int argc, char *argv[]) {
+int main (int argc, char *argv[]) {
         struct node *head = NULL;
         struct node *tail = NULL;
         char buffer[2048];
