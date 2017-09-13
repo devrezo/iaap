@@ -62,13 +62,13 @@ struct node *reverseByKNodes (struct node *head, int k) {
         kthNode->next = NULL;
         return head;
 }
-        int value;
         int main (int argc, char *argv[]) {
         struct node *head = NULL;
         struct node *tail = NULL;
         char buffer[2048];
         char *p = NULL;
         int k;
+        int value;
 
         fgets (buffer, 2048, stdin);
         p = strtok (buffer, "abcdefghijklmnopqrstuvwxyz=\nABCDEFGIJKLMNOPQRSTUVWXYZ");
