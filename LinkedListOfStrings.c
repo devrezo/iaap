@@ -55,6 +55,5 @@ int main (int argc, char *argv[]) {
         }
         printList (head);
         destroyList (head);
-        free (buffer);
         return 0;
 }
