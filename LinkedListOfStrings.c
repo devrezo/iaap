@@ -54,5 +54,6 @@ int main (int argc, char *argv[]) {
                 str = strtok (NULL, " \n");
         }
         printList (head);
+        destroyList (head);
         return 0;
 }
