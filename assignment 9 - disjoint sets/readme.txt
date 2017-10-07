@@ -1,4 +1,6 @@
-Have used linux kernel style coding conventions. Used a bst to implement the disjoint set 
+Have used linux kernel style coding conventions. Used bst to implement the disjoint set ADT.
+
+
 1. question_1.c 
 
     The code forms a bst of key nodes from user input. Initially, each node is a disjoint set. As we perform an union operation, we
