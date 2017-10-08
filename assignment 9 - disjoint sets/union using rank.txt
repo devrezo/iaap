@@ -1,0 +1,39 @@
+void union_set(int data1, int data2, struct tnode **root_ref) {
+	struct node *n1 = NULL;
+	struct node *n2 = NULL;
+	struct node *rep1 = NULL;
+	struct node *rep2 = NULL;
+
+	n1 = get(data1, root_ref);
+	n2 = get(data2, root_ref);
+	rep1 = find_set(n1);
+	rep2 = find_set(n2);
+
+	check for null conditions here and proceed with union rank if
+	the conditions are satisfied. 
+
+	in the union operation, we integrate the set with lower rank 
+	into the set with higher rank 
+
+	if (rep2->rank >= rep1->rank) {
+		if (rep1->rank == rep2->rank) {
+			rep1->rank =+1;
+			rep2->representative = rep1;
+		}
+		else {
+			here if the second set is not having the same rank
+			as that of the first set, integrate the smaller set by
+			making the first set representative 
+			rep2->representative = rep1;
+		}
+	}
+	else {
+		this means that the rank of the second set is greater than
+		the rank of the first set.
+		so integrate the first set into the second set by making the
+		representative of the second set as the representative of the
+		first.
+		rep1->representative = rep2;
+		 take a small example and comprehend.
+	}
+}
