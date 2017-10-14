@@ -81,6 +81,13 @@ void enq(struct node *item, struct qnode **front_ref, struct qnode **rear_ref) {
 	}
 }
 
+struct qnode * get_front(struct qnode **front_ref) {
+	if (*front_ref == NULL) {
+		return NULL;
+	}
+	return *front_ref;
+}
+
 void deq(struct qnode **front_ref) {
 	struct qnode *temp = NULL;
 	if (*front_ref == NULL) {
