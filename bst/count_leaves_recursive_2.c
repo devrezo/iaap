@@ -57,7 +57,7 @@ void destroy_tree(struct node *root) {
 
 int count_leaves(struct node *root) {
 	if (!root) {
-		return;
+		return 0;
 	}
 	if (root->left == NULL && root->right == NULL) {
 		return 1;
